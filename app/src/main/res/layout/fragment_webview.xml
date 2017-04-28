@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<com.kittendev.diternet.view.TopFreash
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/mainSwipeRefreshLayout1">
+	<org.xwalk.core.XWalkView
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:id="@+id/web"/>
+	</com.kittendev.diternet.view.TopFreash>
+</LinearLayout>
+

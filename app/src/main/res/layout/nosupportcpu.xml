@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:gravity="center"
+	android:background="#F23838">
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:text="  :("
+		android:textSize="60sp"
+		android:textColor="#FFFFFF"
+		android:textStyle="normal"
+		android:typeface="sans"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="很抱歉, 该浏览器内核不支持您的设备\n该版本仅支持arm架构的CPU\n\nI'm sorry,your phone isn't supported\nThis version only support armv7/arm64 CPU\n\nJe suis désdé,votre soutien pas\nCette versin armv7/arm64 CPU appuient uniquement\n\nすみません,あなたの携带电话が支持された\nこのバーヅョンだ支持armv7/arm64 CPU\n\n"
+		android:layout_width="match_parent"
+		android:textColor="#FFFFFF"
+		android:paddingLeft="10dp"/>
+
+</LinearLayout>
+

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:orientation="vertical">
+
+	<android.support.v7.widget.Toolbar
+		android:padding="8dp"
+		android:background="@color/colorPrimary"
+		android:layout_width="match_parent"
+		android:layout_height="56dp"
+		android:elevation="4dp">
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:gravity="center"
+			android:layout_height="match_parent"
+			android:layout_width="match_parent">
+
+			<android.support.v7.widget.AppCompatEditText
+				android:layout_marginRight="16dp"
+				android:padding="8dp"
+				android:id="@+id/url_editor"
+				android:background="#88FFFFFF"
+				android:layout_weight="1"
+				android:singleLine="true"
+				android:layout_height="match_parent"
+				android:layout_width="wrap_content"
+				android:textColor="#AFFFFFFF"
+				android:textColorHint="#AFFFFFFF"/>
+
+			<ImageButton
+				android:src="@mipmap/ic_refresh_white_24dp"
+				android:background="@null"
+				android:layout_weight="0"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/ref"/>
+
+		</LinearLayout>
+
+	</android.support.v7.widget.Toolbar>
+
+	<RelativeLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_weight="1.0">
+
+		<fragment
+			android:id="@+id/id_fragment_title"
+			android:name="com.kittendev.diternet.ui.activity.WebView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"/>
+	</RelativeLayout>
+
+	<LinearLayout
+		android:background="@color/colorPrimary"
+		android:layout_weight="0"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:padding="12dp">
+
+		<ImageButton
+			android:src="@mipmap/ic_arrow_back_white_24dp"
+			android:background="@null"
+			android:id="@+id/back"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_weight="1"/>
+
+		<ImageButton
+			android:src="@mipmap/ic_arrow_forward_white_24dp"
+			android:background="@null"
+			android:id="@+id/go"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_weight="1"/>
+
+		<ImageButton
+			android:src="@mipmap/logo"
+			android:background="@null"
+			android:id="@+id/menu"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_weight="1"/>
+
+		<ImageButton
+			android:src="@mipmap/ic_fullscreen_white_24dp"
+			android:background="@null"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_weight="1"/>
+
+		<ImageButton
+			android:src="@mipmap/ic_subject_white_24dp"
+			android:background="@null"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_weight="1"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+
