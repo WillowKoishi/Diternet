@@ -32,7 +32,7 @@ private AppCompatEditText urlInputer;
 		web = (WebView) getSupportFragmentManager().findFragmentById(R.id.id_fragment_title);
 		web.load("http://fir.im/Diternet");
 		web.setClickable(true);    
-		h.postDelayed(r,100l);
+		h.postDelayed(r,3000);
 		urlInputer.setHint("Diternet");
 		urlInputer.setOnFocusChangeListener(new OnFocusChangeListener(){
 
@@ -112,6 +112,5 @@ private AppCompatEditText urlInputer;
 		{
 			// TODO: Implement this method
 			super.handleMessage(msg);
-		}
-};
+		}};
 }
